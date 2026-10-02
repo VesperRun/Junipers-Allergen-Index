@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "sample": true,
+    "sources_url": "#sources"
+  },
+  "bexar": {
+    "county": "Bexar",
+    "updated_at": "2026-10-02T11:00:00-05:00",
+    "note": "Ragweed above typical for early October; grass holding steady.",
+    "allergens": {
+      "mountain_cedar": {
+        "label": "Mountain cedar",
+        "level": "Low",
+        "value": 1,
+        "unit": "index"
+      },
+      "oak": {
+        "label": "Oak",
+        "level": "Low",
+        "value": 1,
+        "unit": "index"
+      },
+      "ragweed": {
+        "label": "Ragweed",
+        "level": "High",
+        "value": 4,
+        "unit": "index"
+      },
+      "grass": {
+        "label": "Grass",
+        "level": "Moderate",
+        "value": 2,
+        "unit": "index"
+      },
+      "mold": {
+        "label": "Mold",
+        "level": "No data",
+        "value": null,
+        "unit": null
+      }
+    }
+  },
+  "travis": {
+    "county": "Travis",
+    "updated_at": "2026-10-02T11:00:00-05:00",
+    "note": "Ragweed elevated; cedar and oak quiet for the season.",
+    "allergens": {
+      "mountain_cedar": {
+        "label": "Mountain cedar",
+        "level": "Low",
+        "value": 1,
+        "unit": "index"
+      },
+      "oak": {
+        "label": "Oak",
+        "level": "Low",
+        "value": 2,
+        "unit": "index"
+      },
+      "ragweed": {
+        "label": "Ragweed",
+        "level": "Very high",
+        "value": 5,
+        "unit": "index"
+      },
+      "grass": {
+        "label": "Grass",
+        "level": "Moderate",
+        "value": 3,
+        "unit": "index"
+      },
+      "mold": {
+        "label": "Mold",
+        "level": "No data",
+        "value": null,
+        "unit": null
+      }
+    }
+  }
+}
