@@ -1,14 +1,15 @@
 name: Deploy GitHub Pages
 
+# Publishes static files to the gh-pages branch. One-time repo setup:
+# Settings → Pages → Build and deployment → Deploy from a branch → gh-pages / (root)
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
@@ -16,25 +17,20 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
       - name: Stage static site
         run: |
-          mkdir -p _site
-          cp index.html _site/
-          cp .nojekyll _site/ 2>/dev/null || touch _site/.nojekyll
-          cp -r css js data _site/
+          mkdir -p public
+          cp index.html public/
+          cp -r css js data public/
+          cp .nojekyll public/ 2>/dev/null || touch public/.nojekyll
 
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
+      - name: Publish to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: _site
-
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages

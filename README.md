@@ -22,10 +22,15 @@ Open [http://localhost:8080](http://localhost:8080). Or double-click [`serve.bat
 
 ### GitHub Pages
 
-1. Push `main` to GitHub.
-2. Repo **Settings → Pages → Build and deployment → Source:** choose **GitHub Actions** (not “Deploy from a branch”). If this is skipped, the `Deploy GitHub Pages` workflow fails in email with “all jobs have failed.”
-3. **Actions** tab → re-run **Deploy GitHub Pages** (or push again).
-4. Site: [vesperrun.github.io/Junipers-Allergen-Index/](https://vesperrun.github.io/Junipers-Allergen-Index/)
+The workflow publishes static files to the **`gh-pages`** branch. GitHub cannot enable Pages from Actions alone (`Get Pages site failed` / `Not Found` until you do this once):
+
+1. Open [Settings → Pages](https://github.com/VesperRun/Junipers-Allergen-Index/settings/pages).
+2. **Build and deployment → Source:** **Deploy from a branch**.
+3. **Branch:** `gh-pages` · **Folder:** `/ (root)` · **Save**.
+4. Push to `main` (or **Actions → Deploy GitHub Pages → Run workflow**).
+5. Live: [vesperrun.github.io/Junipers-Allergen-Index/](https://vesperrun.github.io/Junipers-Allergen-Index/)
+
+Private repos may need a paid plan for Pages; a **public** repo gets a free user site.
 
 ## Edit the board
 
