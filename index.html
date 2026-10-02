@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juniper’s Allergen Index · Travis · Bexar</title>
+    <link rel="stylesheet" href="css/board.css" />
+  </head>
+  <body>
+    <div class="board">
+      <header class="top-bar">
+        <div class="top-bar__brand">
+          <h1 class="top-bar__title">Juniper’s Allergen Index</h1>
+          <p class="top-bar__sub" id="top-sub">Travis · Bexar · Updated —</p>
+        </div>
+        <div class="top-bar__meta">
+          <span class="badge badge--sample" id="sample-badge">Sample data</span>
+          <a class="top-bar__sources" href="#sources">Sources</a>
+        </div>
+      </header>
+
+      <p class="cedar-season" id="cedar-season" hidden></p>
+
+      <main class="columns" id="columns" aria-live="polite">
+        <p class="load-msg" id="load-msg">Loading…</p>
+      </main>
+
+      <footer class="footer" id="sources">
+        <p class="footer__lead">
+          Informational only. Not medical advice. County-level estimate; your neighborhood may differ.
+        </p>
+        <p class="footer__providers" id="footer-providers">
+          Data: sample values for layout preview. Live providers will be listed when wired.
+        </p>
+        <p class="footer__time" id="footer-time"></p>
+      </footer>
+    </div>
+
+    <script src="js/board.js"></script>
+  </body>
+</html>
