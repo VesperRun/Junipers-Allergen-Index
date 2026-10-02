@@ -65,3 +65,7 @@ When added: a small fetch script, `.env.example` for keys, cron every 6–24h, o
 ## Disclaimer
 
 County-level estimates. Your neighborhood may differ. Not medical advice. Sample data is labeled on the page until live providers are wired.
+
+## License
+
+**Proprietary — all rights reserved.** See [LICENSE](LICENSE). No use, copy, or distribution without written permission from the copyright holder.
