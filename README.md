@@ -1,6 +1,6 @@
 # Juniper’s Allergen Index
 
-Single-page, broadcast-style allergen board for **Bexar** (left) and **Travis** (right) counties, Central Texas.
+Single-page, broadcast-style allergen board for **Bexar** (left) and **Travis** (right) counties, Central Texas. UI is **CSS + type only** — no map images or county artwork.
 
 **Repo:** [github.com/VesperRun/Junipers-Allergen-Index](https://github.com/VesperRun/Junipers-Allergen-Index)
 
