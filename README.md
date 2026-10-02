@@ -23,8 +23,9 @@ Open [http://localhost:8080](http://localhost:8080). Or double-click [`serve.bat
 ### GitHub Pages
 
 1. Push `main` to GitHub.
-2. Repo **Settings → Pages → Build and deployment → Source:** GitHub Actions.
-3. After the workflow runs, the site is at the Live URL above.
+2. Repo **Settings → Pages → Build and deployment → Source:** choose **GitHub Actions** (not “Deploy from a branch”). If this is skipped, the `Deploy GitHub Pages` workflow fails in email with “all jobs have failed.”
+3. **Actions** tab → re-run **Deploy GitHub Pages** (or push again).
+4. Site: [vesperrun.github.io/Junipers-Allergen-Index/](https://vesperrun.github.io/Junipers-Allergen-Index/)
 
 ## Edit the board
 
